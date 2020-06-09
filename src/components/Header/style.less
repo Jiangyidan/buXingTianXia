@@ -168,6 +168,7 @@
   width: 100%;
   height: 1.2rem;
   position: relative;
+  z-index: 10;
 }
 .headerTransparent {
   // transition: all 0.2s ease-out;
@@ -182,7 +183,7 @@
 .headerLogo {
   position: relative;
   display: block;
-  padding: 26px 0 16px;
+  padding: 0.26rem 0 0.16rem;
   text-align: center;
   font-size: 0;
   opacity: 1;
@@ -206,7 +207,7 @@
       padding: 0 0.15rem;
       line-height: 0.3rem;
       color: #e5dfd9;
-      font-size: 14px;
+      font-size: 0.14rem;
       letter-spacing: 1.34px;
       font-family: Futura-LT-Medium, GucciChinese;
       position: relative;
@@ -218,9 +219,9 @@
     }
     a:hover::before {
       content: '';
-      width: 0px;
-      height: 0px;
-      border-width: 4px;
+      width: 0;
+      height: 0;
+      border-width: 0.04rem;
       border-style: solid;
       border-color: transparent transparent #fff transparent;
       position: absolute;
@@ -245,7 +246,7 @@
         line-height: 0.12rem;
         font-size: 0.12rem;
         font-family: FuturaLT-Book, GucciChinese;
-        padding: 3px;
+        padding: 0.03rem;
       }
     }
   }
@@ -268,13 +269,13 @@
         line-height: 0.12rem;
         font-size: 0.12rem;
         font-family: FuturaLT-Book, GucciChinese;
-        padding: 5px;
+        padding: 0.05rem;
       }
     }
   }
 }
 .headerSearchIcon {
-  margin: -4px 0 0 0.3rem;
+  margin: -0.04rem 0 0 0.3rem;
   cursor: pointer;
 }
 .headerSearch {
@@ -291,14 +292,14 @@
   -moz-transition: width 0.6s;
   -webkit-transition: width 0.6s;
   -o-transition: width 0.6s;
-  padding: 6px 0 9px 5%;
+  padding: 0.06rem 0 0.09rem 5%;
   input {
     background: #363d4c;
     border: none;
     height: 100%;
     width: 95%;
     font-size: 0.12rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.01rem;
     line-height: 0.16rem;
     background: transparent;
     border-radius: 0;
@@ -322,7 +323,7 @@
   font-size: 0.33rem;
   cursor: pointer;
   vertical-align: middle;
-  padding: 3px 0 0 9px;
+  padding: 0.03rem 0 0 0.09rem;
 }
 .headerSearchClose:hover {
   color: #e5dfd9;

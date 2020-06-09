@@ -1,5 +1,9 @@
 @import '~antd/es/style/themes/default.less';
 
+html {
+  font-size: calc(100vw / 19.2);
+  font-family: PingFang SC;
+}
 html,
 body,
 #root {
@@ -27,11 +31,6 @@ body {
 ul,
 ol {
   list-style: none;
-}
-
-// 调整logo右边标题文字的宽度
-.ant-pro-top-nav-header-logo {
-  width: 200px;
 }
 
 @media (max-width: @screen-xs) {

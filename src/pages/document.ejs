@@ -9,23 +9,6 @@
     />
     <title>布行天下</title>
     <link rel="icon" href="/favicon.png" type="image/x-icon" />
-    <script>
-      let designSize = 1903; // 设计图尺寸
-      let html = document.documentElement;
-      let wW = html.clientWidth; // 窗口宽度
-      let rem = (wW * 100) / designSize;
-      document.documentElement.style.fontSize = rem + 'px';
-
-      // 页面缩放时 font-size 的调整
-      $(window).resize(function() {
-        let designSize = 1903; // 设计图尺寸
-        let html = document.documentElement;
-        let wW = html.clientWidth; // 窗口宽度
-        let rem = (wW * 100) / designSize;
-        console.log(123, rem);
-        document.documentElement.style.fontSize = rem + 'px';
-      });
-    </script>
   </head>
   <body>
     <noscript>Out-of-the-box mid-stage front/design solution!</noscript>

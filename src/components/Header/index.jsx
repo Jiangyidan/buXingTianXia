@@ -7,7 +7,7 @@ import iconFont from '../../utils/iconfont';
 const IconFont = Icon.createFromIconfontCN({
   scriptUrl: iconFont,
 });
-export default class NoticeIcon extends Component {
+export default class Header extends Component {
   static defaultProps = {
     onItemClick: () => {},
     onPopupVisibleChange: () => {},

@@ -1,9 +1,10 @@
 import { Form } from 'antd';
 import React, { PureComponent } from 'react';
 import { connect } from 'dva';
-import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import styles from './style.less';
+// import { PageHeaderWrapper } from '@ant-design/pro-layout';
+// import styles from './style.less';
 import Header from '@/components/Header';
+import Container from '@/components/Container';
 
 const NAMESPACE = 'equipment-manag/cabinet-manag';
 @Form.create()
@@ -35,9 +36,14 @@ class CabinetManag extends PureComponent {
   }
 
   render() {
-    const {} = this.state;
+    // const {} = this.state;
 
-    return <Header></Header>;
+    return (
+      <div>
+        <Header></Header>
+        <Container></Container>
+      </div>
+    );
   }
 }
 
