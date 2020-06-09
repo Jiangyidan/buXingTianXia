@@ -1,0 +1,330 @@
+// .headerContainer {
+//   width: 100%;
+//   height: 120px;
+//   position: relative;
+// }
+// .headerTransparent {
+//   // transition: all 0.2s ease-out;
+//   /* 创建一个线性渐变的图像 (direction, color-stop1, color-stop2, ...)
+//   direction 渐变的方向或角度，color-stop1等为起止颜色*/
+//   background: linear-gradient(180deg, #23201e 0, rgba(35, 32, 30, 0));
+// }
+// .headerTransparent:hover {
+//   background: #1b1b1b;
+//   // transition: all 0.2s ease-out;
+// }
+// .headerLogo {
+//   position: relative;
+//   display: block;
+//   padding: 26px 0 16px;
+//   text-align: center;
+//   font-size: 0;
+//   opacity: 1;
+//   height: 69px;
+//   transition: height 0.2s ease-out, opacity 0.2s ease-out, padding 0.2s ease-out;
+//   img {
+//     width: 160px;
+//   }
+// }
+// .headerMenu {
+//   .headerMenuUl {
+//     overflow: hidden;
+//     display: flex;
+//     justify-content: center;
+//     li {
+//       float: left;
+//       position: relative;
+//     }
+//     a {
+//       height: 51px;
+//       padding: 0 15px;
+//       line-height: 30px;
+//       color: #e5dfd9;
+//       font-size: 14px;
+//       letter-spacing: 1.34px;
+//       font-family: Futura-LT-Medium, GucciChinese;
+//       position: relative;
+//       z-index: 19;
+//       display: inline-block;
+//     }
+//     a:hover {
+//       color: #fff;
+//     }
+//     a:hover::before {
+//       content: '';
+//       width: 0px;
+//       height: 0px;
+//       border-width: 4px;
+//       border-style: solid;
+//       border-color: transparent transparent #fff transparent;
+//       position: absolute;
+//       left: 45%;
+//       top: 54%;
+//     }
+//   }
+// }
+// .headerLeftNav {
+//   position: absolute;
+//   left: -16px;
+//   top: 20px;
+//   .headerMenuUl {
+//     overflow: hidden;
+//     li {
+//       float: left;
+//       position: relative;
+//       padding: 0 8px;
+//       a {
+//         position: relative;
+//         color: #e5dfd9;
+//         line-height: 12px;
+//         font-size: 12px;
+//         font-family: FuturaLT-Book, GucciChinese;
+//         padding: 3px;
+//       }
+//     }
+//   }
+// }
+// .headerRightNav {
+//   display: flex;
+//   position: absolute;
+//   right: 18px;
+//   top: 20px;
+//   .headerMenuUl {
+//     overflow: hidden;
+//     z-index: 100;
+//     li {
+//       float: left;
+//       position: relative;
+//       padding: 0 10px;
+//       a {
+//         position: relative;
+//         color: #e5dfd9;
+//         line-height: 12px;
+//         font-size: 12px;
+//         font-family: FuturaLT-Book, GucciChinese;
+//         padding: 5px;
+//       }
+//     }
+//   }
+// }
+// .headerSearchIcon {
+//   margin: -4px 0 0 30px;
+//   cursor: pointer;
+// }
+// .headerSearch {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   width: 100%;
+//   z-index: 100;
+//   background-color: transparent;
+//   width: 100%;
+//   height: 65px;
+//   background: #363d4c;
+//   transition: width 0.6s, margin-top 0.4s;
+//   -moz-transition: width 0.6s;
+//   -webkit-transition: width 0.6s;
+//   -o-transition: width 0.6s;
+//   padding: 6px 0 9px 5%;
+//   input {
+//     background: #363d4c;
+//     border: none;
+//     height: 100%;
+//     width: 95%;
+//     font-size: 12px;
+//     letter-spacing: 1px;
+//     line-height: 16px;
+//     background: transparent;
+//     border-radius: 0;
+//     outline: none;
+//     padding-left: 15px;
+//     color: #f4f4f4;
+//     font-family: FuturaLT-Book, GucciChinese;
+//   }
+// }
+// .headerSearchsearch {
+//   font-size: 35px;
+//   color: #e5dfd9;
+//   opacity: 0.5;
+// }
+// .headerSearchsearch:hover {
+//   color: #e5dfd9;
+//   opacity: 1;
+// }
+// .headerSearchClose {
+//   opacity: 0.5;
+//   font-size: 33px;
+//   cursor: pointer;
+//   vertical-align: middle;
+//   padding: 3px 0 0 9px;
+// }
+// .headerSearchClose:hover {
+//   color: #e5dfd9;
+//   opacity: 1;
+// }
+
+/* ====================================== */
+.headerContainer {
+  width: 100%;
+  height: 1.2rem;
+  position: relative;
+}
+.headerTransparent {
+  // transition: all 0.2s ease-out;
+  /* 创建一个线性渐变的图像 (direction, color-stop1, color-stop2, ...) 
+  direction 渐变的方向或角度，color-stop1等为起止颜色*/
+  background: linear-gradient(180deg, #23201e 0, rgba(35, 32, 30, 0));
+}
+.headerTransparent:hover {
+  background: #1b1b1b;
+  // transition: all 0.2s ease-out;
+}
+.headerLogo {
+  position: relative;
+  display: block;
+  padding: 26px 0 16px;
+  text-align: center;
+  font-size: 0;
+  opacity: 1;
+  height: 0.69rem;
+  transition: height 0.2s ease-out, opacity 0.2s ease-out, padding 0.2s ease-out;
+  img {
+    width: 1.6rem;
+  }
+}
+.headerMenu {
+  .headerMenuUl {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    li {
+      float: left;
+      position: relative;
+    }
+    a {
+      height: 0.51rem;
+      padding: 0 0.15rem;
+      line-height: 0.3rem;
+      color: #e5dfd9;
+      font-size: 14px;
+      letter-spacing: 1.34px;
+      font-family: Futura-LT-Medium, GucciChinese;
+      position: relative;
+      z-index: 19;
+      display: inline-block;
+    }
+    a:hover {
+      color: #fff;
+    }
+    a:hover::before {
+      content: '';
+      width: 0px;
+      height: 0px;
+      border-width: 4px;
+      border-style: solid;
+      border-color: transparent transparent #fff transparent;
+      position: absolute;
+      left: 45%;
+      top: 54%;
+    }
+  }
+}
+.headerLeftNav {
+  position: absolute;
+  left: -0.16rem;
+  top: 0.2rem;
+  .headerMenuUl {
+    overflow: hidden;
+    li {
+      float: left;
+      position: relative;
+      padding: 0 0.08rem;
+      a {
+        position: relative;
+        color: #e5dfd9;
+        line-height: 0.12rem;
+        font-size: 0.12rem;
+        font-family: FuturaLT-Book, GucciChinese;
+        padding: 3px;
+      }
+    }
+  }
+}
+.headerRightNav {
+  display: flex;
+  position: absolute;
+  right: 0.18rem;
+  top: 0.2rem;
+  .headerMenuUl {
+    overflow: hidden;
+    z-index: 100;
+    li {
+      float: left;
+      position: relative;
+      padding: 0 0.1rem;
+      a {
+        position: relative;
+        color: #e5dfd9;
+        line-height: 0.12rem;
+        font-size: 0.12rem;
+        font-family: FuturaLT-Book, GucciChinese;
+        padding: 5px;
+      }
+    }
+  }
+}
+.headerSearchIcon {
+  margin: -4px 0 0 0.3rem;
+  cursor: pointer;
+}
+.headerSearch {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  width: 100%;
+  height: 0.65rem;
+  background: #363d4c;
+  transition: width 0.6s, margin-top 0.4s;
+  -moz-transition: width 0.6s;
+  -webkit-transition: width 0.6s;
+  -o-transition: width 0.6s;
+  padding: 6px 0 9px 5%;
+  input {
+    background: #363d4c;
+    border: none;
+    height: 100%;
+    width: 95%;
+    font-size: 0.12rem;
+    letter-spacing: 1px;
+    line-height: 0.16rem;
+    background: transparent;
+    border-radius: 0;
+    outline: none;
+    padding-left: 0.15rem;
+    color: #f4f4f4;
+    font-family: FuturaLT-Book, GucciChinese;
+  }
+}
+.headerSearchsearch {
+  font-size: 0.35rem;
+  color: #e5dfd9;
+  opacity: 0.5;
+}
+.headerSearchsearch:hover {
+  color: #e5dfd9;
+  opacity: 1;
+}
+.headerSearchClose {
+  opacity: 0.5;
+  font-size: 0.33rem;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 3px 0 0 9px;
+}
+.headerSearchClose:hover {
+  color: #e5dfd9;
+  opacity: 1;
+}
