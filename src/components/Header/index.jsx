@@ -8,17 +8,6 @@ const IconFont = Icon.createFromIconfontCN({
   scriptUrl: iconFont,
 });
 export default class Header extends Component {
-  static defaultProps = {
-    onItemClick: () => {},
-    onPopupVisibleChange: () => {},
-    onTabChange: () => {},
-    onClear: () => {},
-    onViewMore: () => {},
-    loading: false,
-    clearClose: false,
-    emptyImage: 'https://gw.alipayobjects.com/zos/rmsportal/wAhyIChODzsoKIOBHcBk.svg',
-  };
-
   state = {
     searchDisplay: 'none',
   };
@@ -38,11 +27,14 @@ export default class Header extends Component {
   };
 
   render() {
-    // const {} = this.props;
+    const { isScroll } = this.props;
     const { searchDisplay } = this.state;
-
     return (
-      <div className={`${styles.headerTransparent}  ${styles.headerContainer}`}>
+      <div
+        className={`${styles.headerTransparent}  ${styles.headerContainer} ${
+          isScroll ? styles.isScroll : null
+        }`}
+      >
         <div className={styles.headerLogo}>
           <img src="https://res.gucci.cn/images/common/gucci-logo@2x.png" alt="GUCCI"></img>
         </div>
@@ -77,14 +69,14 @@ export default class Header extends Component {
             </li>
           </ul>
         </div>
-        <div className={styles.headerLeftNav}>
+        <div className={`${styles.headerLeftNav} ${isScroll ? styles.isScrollLeft : null}`}>
           <ul className={styles.headerMenuUl}>
             <li>
               <EnvironmentOutlined style={{ color: '#e5dfd9', width: 15, height: 15 }} />
-              <a>浙江绍兴</a>
+              <a className={` ${isScroll ? styles.isScrollLocat : null}`}>浙江绍兴</a>
             </li>
             <li>
-              <a>客户服务</a>
+              <a className={` ${isScroll ? styles.isScrollLocat : null}`}>客户服务</a>
             </li>
             <li>
               <PhoneOutlined style={{ color: '#e5dfd9', width: 15, height: 15 }} />
@@ -92,10 +84,10 @@ export default class Header extends Component {
             </li>
           </ul>
         </div>
-        <div className={styles.headerRightNav}>
+        <div className={`${styles.headerRightNav} ${isScroll ? styles.isScrollRight : null}`}>
           <ul className={styles.headerMenuUl}>
             <li>
-              <a>登录</a>
+              <a className={` ${isScroll ? styles.isScrollLocat : null}`}>登录</a>
             </li>
             <li>
               <HeartOutlined
@@ -104,10 +96,10 @@ export default class Header extends Component {
             </li>
             <li>
               <IconFont type="icon-gouwu" style={{ opacity: 0.5 }} />
-              <a>购物袋</a>
+              <a className={`${isScroll ? styles.isScrollLocat : null}`}>购物袋</a>
             </li>
           </ul>
-          <div className={styles.headerSearchIcon}>
+          <div className={`${styles.headerSearchIcon} ${isScroll ? styles.isScrollIcon : null} `}>
             <IconFont
               type="icon-sousuo-tianchong"
               className={styles.headerSearchsearch}
