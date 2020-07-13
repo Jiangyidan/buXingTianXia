@@ -67,6 +67,7 @@ class Home extends PureComponent {
           <ThirdArticle></ThirdArticle>
           <Story></Story>
         </div>
+        <h3>123</h3>
         <Foot></Foot>
       </div>
     );
