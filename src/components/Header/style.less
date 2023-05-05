@@ -167,14 +167,21 @@
 .headerContainer {
   width: 100%;
   height: 1.2rem;
-  position: relative;
+  position: fixed;
   z-index: 10;
+  top: 0;
 }
 .headerTransparent {
-  // transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
   /* 创建一个线性渐变的图像 (direction, color-stop1, color-stop2, ...) 
   direction 渐变的方向或角度，color-stop1等为起止颜色*/
   background: linear-gradient(180deg, #23201e 0, rgba(35, 32, 30, 0));
+}
+.isScroll {
+  background: #1b1b1b;
+  transition: all 0.3s ease-out;
+  position: fixed;
+  top: -0.55rem;
 }
 .headerTransparent:hover {
   background: #1b1b1b;
@@ -230,6 +237,10 @@
     }
   }
 }
+.isScrollLocat {
+  display: none;
+}
+
 .headerLeftNav {
   position: absolute;
   left: -0.16rem;
@@ -250,6 +261,9 @@
       }
     }
   }
+}
+.isScrollLeft {
+  top: 0.73rem;
 }
 .headerRightNav {
   display: flex;
@@ -274,9 +288,15 @@
     }
   }
 }
+.isScrollRight {
+  top: 0.73rem;
+}
 .headerSearchIcon {
   margin: -0.04rem 0 0 0.3rem;
   cursor: pointer;
+}
+.isScrollIcon {
+  margin: -0.04rem 0 0 0;
 }
 .headerSearch {
   position: fixed;
